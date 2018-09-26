@@ -26,6 +26,5 @@
   ```bash
   source ~/spack/share/spack/setup-env.sh
   spack bootstrap
-  spack compiler find
   ```
   Now everytime you start your machine you will have spack ready to compile new packages
