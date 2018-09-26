@@ -68,7 +68,6 @@ Vagrant.configure("2") do |config|
     mv /etc/apt/sources.list /etc/apt/sources.list.ORIG
     cp /vagrant/sources.list /etc/apt/sources.list
     apt-get update
-    apt-get upgrade -y
     apt-get install -y git build-essential python-dev python-pip python3-dev python3-pip
   SHELL
 end
