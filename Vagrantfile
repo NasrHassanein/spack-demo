@@ -66,7 +66,7 @@ Vagrant.configure("2") do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
     mv /etc/apt/sources.list /etc/apt/sources.list.ORIG
-    cp /vagrant/sources.list /opt/apt/sources.list
+    cp /vagrant/sources.list /etc/apt/sources.list
     apt-get update
     apt-get upgrade -y
     apt-get install -y git build-essential python-dev python-pip python3-dev python3-pip
